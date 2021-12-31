@@ -1,20 +1,19 @@
 import java.util.List;
 
-public class Regular{
-    private String PNR;
-    private String seatNumber;
+public class Regular extends Ticket{
+
     private String price;
     private String status;
     private Flight flight;
     private Passenger passenger;
     private List<String> specialService;
-    public Regular(String PNR, String seatNumber, String price , String status, Flight flight, Passenger passenger,List<String>specialService) {
-        this.PNR=PNR;
+    public Regular(long PNR,int seatNumber, String price , String status, Flight flight, Passenger passenger,List<String>specialService) {
+        super(PNR,seatNumber);
         this.specialService=specialService;
-        this.seatNumber=seatNumber;
         this.price=price;
         this.passenger=passenger;
         this.flight=flight;
+        this.status="confirmed";
     }
     public void setPrice(String price){
         this.price=price;

@@ -21,13 +21,13 @@ public class Flight {
   this.depDateTime=depDateTime;
   this.destDateTime=destDateTime;
  }
- public String getAirline(){
+ public  String getAirline(){
   return airline;
  }
  public void setAirlines(String airlines){
   this.airline=airlines;
  }
- public String getFlightNumber(){
+ public  String getFlightNumber(){
   return flightNumber;
  }
  public void setFlightNumber(String flightNumber){

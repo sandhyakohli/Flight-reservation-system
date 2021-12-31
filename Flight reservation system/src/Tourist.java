@@ -1,8 +1,7 @@
 import java.util.List;
 
-public class Tourist{
-    private long PNR;
-    private int seatNumber;
+public class Tourist extends Ticket{
+   ;
     private double price;
     protected String status;
     private static final int maxNoLocation =5;
@@ -11,11 +10,11 @@ public class Tourist{
     private Passenger passenger;
     private static List<String> touristLocation;
     public Tourist(long PNR, int seatNumber,Address hotelAddress,List<String> touristLocation) {
-        this.PNR=PNR;
-        this.seatNumber=seatNumber;
+        super(PNR,seatNumber);
         this.price=price;
         this.hotelAddress=hotelAddress;
         this.touristLocation=touristLocation;
+        this.status="confirmed";
     }
     public void setPrice(double price){
         this.price=price;
